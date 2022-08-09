@@ -28,6 +28,7 @@ local function setup_commands()
     RustOpenCargo = { require("rust-tools.open_cargo_toml").open_cargo_toml },
     RustParentModule = { require("rust-tools.parent_module").parent_module },
     RustJoinLines = { require("rust-tools.join_lines").join_lines },
+    KlebsFixBabyRust = { require("rust-tools.klebs_fix_baby_rust").klebs_fix_baby_rust },
     RustRunnables = {
       require("rust-tools.runnables").runnables,
     },

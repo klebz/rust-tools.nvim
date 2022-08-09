@@ -34,6 +34,9 @@ function M.start_standalone_client()
         "command! RustJoinLines :lua require('rust-tools.join_lines').join_lines()"
       )
       vim.cmd(
+        "command! KlebsFixBabyRust :lua require('rust-tools.klebs_fix_baby_rust').klebs_fix_baby_rust()"
+      )
+      vim.cmd(
         "command! RustHoverActions :lua require('rust-tools.hover_actions').hover_actions()"
       )
       vim.cmd(
@@ -49,6 +52,7 @@ function M.start_standalone_client()
       vim.cmd("delcommand RustToggleInlayHints")
       vim.cmd("delcommand RustExpandMacro")
       vim.cmd("delcommand RustJoinLines")
+      vim.cmd("delcommand KlebsFixBabyRust")
       vim.cmd("delcommand RustHoverActions")
       vim.cmd("delcommand RustMoveItemDown")
       vim.cmd("delcommand RustMoveItemUp")

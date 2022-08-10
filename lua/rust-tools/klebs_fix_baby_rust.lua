@@ -21,8 +21,8 @@ local function handler(_, result, ctx)
   )
 end
 
--- Sends the request to rust-analyzer to get the TextEdits to join the lines
--- under the cursor and applies them
+-- Sends the request to rust-analyzer to get the TextEdits.
+-- Applies the result
 function M.klebs_fix_baby_rust()
   utils.request(0, "experimental/klebsFixBabyRust", get_params(), handler)
 end
